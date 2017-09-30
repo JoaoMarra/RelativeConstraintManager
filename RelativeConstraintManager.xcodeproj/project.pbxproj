@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D94F76AE1F8018AC00674CB7 /* RelativeConstraintManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D94F76AD1F8018AC00674CB7 /* RelativeConstraintManager.m */; };
 		D9BB6B901F7FFDD500E15B58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BB6B8F1F7FFDD500E15B58 /* AppDelegate.m */; };
 		D9BB6B931F7FFDD500E15B58 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BB6B921F7FFDD500E15B58 /* ViewController.m */; };
 		D9BB6B961F7FFDD500E15B58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9BB6B941F7FFDD500E15B58 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D94F76AC1F8018AC00674CB7 /* RelativeConstraintManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RelativeConstraintManager.h; sourceTree = "<group>"; };
+		D94F76AD1F8018AC00674CB7 /* RelativeConstraintManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RelativeConstraintManager.m; sourceTree = "<group>"; };
 		D9BB6B8B1F7FFDD500E15B58 /* RelativeConstraintManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RelativeConstraintManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9BB6B8E1F7FFDD500E15B58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D9BB6B8F1F7FFDD500E15B58 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,9 +42,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D94F76AB1F80188C00674CB7 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				D94F76AC1F8018AC00674CB7 /* RelativeConstraintManager.h */,
+				D94F76AD1F8018AC00674CB7 /* RelativeConstraintManager.m */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		D9BB6B821F7FFDD500E15B58 = {
 			isa = PBXGroup;
 			children = (
+				D94F76AB1F80188C00674CB7 /* lib */,
 				D9BB6B8D1F7FFDD500E15B58 /* RelativeConstraintManager */,
 				D9BB6B8C1F7FFDD500E15B58 /* Products */,
 			);
@@ -144,6 +157,7 @@
 			files = (
 				D9BB6B931F7FFDD500E15B58 /* ViewController.m in Sources */,
 				D9BB6B9E1F7FFDD500E15B58 /* main.m in Sources */,
+				D94F76AE1F8018AC00674CB7 /* RelativeConstraintManager.m in Sources */,
 				D9BB6B901F7FFDD500E15B58 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

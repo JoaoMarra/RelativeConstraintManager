@@ -8,6 +8,7 @@
 
 #import "RelativeConstraintManagerViewController.h"
 #import "TableCell.h"
+#import <RelativeConstraintManager/RelativeConstraintManager.h>
 
 @interface RelativeConstraintManagerViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -24,6 +25,8 @@
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     tableView.delegate = self;
     tableView.dataSource = self;
+    tableView.rowHeight = UITableViewAutomaticDimension;
+    tableView.estimatedRowHeight = 10;
     [tableView registerClass:[TableCell class] forCellReuseIdentifier:@"TableCell"];
     [self.view addSubview:tableView];
     

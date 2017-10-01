@@ -8,15 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0A7EE1038D6B96A06FFFAD75788F63A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		0C8D283980C46E1A2E2503379D1A7DF7 /* RelativeConstraintManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F6EB8292F3CC71BF1EBEF863826DBF /* RelativeConstraintManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EAD3C1A5957B3BF43C84E62F4FEA274 /* RelativeConstraintManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73E351AED19538FDA87CA570B3B66136 /* RelativeConstraintManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		188BA302FBAF1CC11AA9ECF217F2AFB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		48DC01AF6A8EE9FBC79048E9E2D30529 /* Pods-RelativeConstraintManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DA6E26B646A2A3041D53D99031AD1 /* Pods-RelativeConstraintManager_Example-dummy.m */; };
 		5263579ACFCD626F5FFC5922C5ABF77A /* Pods-RelativeConstraintManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA065BBE36F1170CA379188A63B863F6 /* Pods-RelativeConstraintManager_Tests-dummy.m */; };
 		798591E9F33FB73E6DC34CD7635BA4C3 /* Pods-RelativeConstraintManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D16F27423871233914B8DB251BB2E095 /* Pods-RelativeConstraintManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		90984B16A71721F0B705A5334510C30A /* RelativeConstraintManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF353043C085FFD68CEBB00B1D1E363 /* RelativeConstraintManager-dummy.m */; };
-		A5F4D3B8AC4ECB4EFD9258627F3D2299 /* RelativeConstraintManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73E351AED19538FDA87CA570B3B66136 /* RelativeConstraintManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C50BE0C940BA28FC84D436AF4471C8B5 /* Pods-RelativeConstraintManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 040A34006453C9A2307C072560C64C73 /* Pods-RelativeConstraintManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D93BC3F71F81792C0055D65F /* RelativeConstraintManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D93BC3F61F81792C0055D65F /* RelativeConstraintManager.m */; };
+		C9841AE31778E194F5C03BC6BAF6FC55 /* RelativeConstraintManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF353043C085FFD68CEBB00B1D1E363 /* RelativeConstraintManager-dummy.m */; };
 		E27F08F1B2395FDED7B755F67A8F7B26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		FAA8E8942DC5F9C624BB2F5808D1A764 /* RelativeConstraintManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF58025C28C07641D466C41303AEE6 /* RelativeConstraintManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,35 +31,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		035D3E43B18B41BAA2564D6318AC0607 /* Pods-RelativeConstraintManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RelativeConstraintManager_Example.modulemap"; sourceTree = "<group>"; };
+		035D3E43B18B41BAA2564D6318AC0607 /* Pods-RelativeConstraintManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RelativeConstraintManager_Example.modulemap"; sourceTree = "<group>"; };
 		040A34006453C9A2307C072560C64C73 /* Pods-RelativeConstraintManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RelativeConstraintManager_Tests-umbrella.h"; sourceTree = "<group>"; };
 		0DF353043C085FFD68CEBB00B1D1E363 /* RelativeConstraintManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RelativeConstraintManager-dummy.m"; sourceTree = "<group>"; };
-		1A5312BFFC58D5C9154189CC065471E5 /* RelativeConstraintManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RelativeConstraintManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A5312BFFC58D5C9154189CC065471E5 /* RelativeConstraintManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RelativeConstraintManager.framework; path = RelativeConstraintManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B5DA6E26B646A2A3041D53D99031AD1 /* Pods-RelativeConstraintManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RelativeConstraintManager_Example-dummy.m"; sourceTree = "<group>"; };
 		1BDE99EB983DB3F2E39374DF13BB2E27 /* RelativeConstraintManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RelativeConstraintManager.xcconfig; sourceTree = "<group>"; };
-		285D81F71234BB26A66C044AD3459ED9 /* Pods_RelativeConstraintManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RelativeConstraintManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		285D81F71234BB26A66C044AD3459ED9 /* Pods_RelativeConstraintManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RelativeConstraintManager_Example.framework; path = "Pods-RelativeConstraintManager_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A1275CE914FB9A0B505EEEE6A12C45 /* Pods-RelativeConstraintManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RelativeConstraintManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2C80C918B4B314F15B749B4B0A08C2F7 /* Pods-RelativeConstraintManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RelativeConstraintManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2E3D1EC0893C2E846788A0BBF1A15493 /* Pods-RelativeConstraintManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RelativeConstraintManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3F6CFF1F7DED9022B57A207DF7BC1F32 /* Pods-RelativeConstraintManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RelativeConstraintManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		50B364761EF2314891734F8D5D34B802 /* Pods-RelativeConstraintManager_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RelativeConstraintManager_Tests-resources.sh"; sourceTree = "<group>"; };
-		64687EA4A374140DBB61F722E1029877 /* RelativeConstraintManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RelativeConstraintManager.modulemap; sourceTree = "<group>"; };
+		64687EA4A374140DBB61F722E1029877 /* RelativeConstraintManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RelativeConstraintManager.modulemap; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		73E351AED19538FDA87CA570B3B66136 /* RelativeConstraintManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RelativeConstraintManager-umbrella.h"; sourceTree = "<group>"; };
+		87F6EB8292F3CC71BF1EBEF863826DBF /* RelativeConstraintManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RelativeConstraintManager.h; sourceTree = "<group>"; };
 		8A3DBABD00D5EA093353BCDBCA307724 /* Pods-RelativeConstraintManager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RelativeConstraintManager_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		908CDA897E93CCBE700AD8EEEAF36A59 /* Pods-RelativeConstraintManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RelativeConstraintManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		93475556C0AF82C6C8FDC0016F967C49 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		952CB510CA5161E0421F6D6E3341690D /* Pods-RelativeConstraintManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RelativeConstraintManager_Example-frameworks.sh"; sourceTree = "<group>"; };
-		AEF52E83E80AE879E296421B20E9615D /* Pods-RelativeConstraintManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RelativeConstraintManager_Tests.modulemap"; sourceTree = "<group>"; };
+		9ABF58025C28C07641D466C41303AEE6 /* RelativeConstraintManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RelativeConstraintManager.m; sourceTree = "<group>"; };
+		AEF52E83E80AE879E296421B20E9615D /* Pods-RelativeConstraintManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RelativeConstraintManager_Tests.modulemap"; sourceTree = "<group>"; };
 		B8C522AAB2F7F1BDE5125ADCEB86A943 /* Pods-RelativeConstraintManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RelativeConstraintManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		BA065BBE36F1170CA379188A63B863F6 /* Pods-RelativeConstraintManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RelativeConstraintManager_Tests-dummy.m"; sourceTree = "<group>"; };
 		BCDAA6A7C2E43221451CA5C8AA862D4D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D16F27423871233914B8DB251BB2E095 /* Pods-RelativeConstraintManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RelativeConstraintManager_Example-umbrella.h"; sourceTree = "<group>"; };
 		D36F697308EE4FB6D0DC80E6DE275817 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8261DFB1CC9F3A6D924A751274406F5 /* Pods_RelativeConstraintManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RelativeConstraintManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D93BC3F51F81792C0055D65F /* RelativeConstraintManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RelativeConstraintManager.h; sourceTree = "<group>"; };
-		D93BC3F61F81792C0055D65F /* RelativeConstraintManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RelativeConstraintManager.m; sourceTree = "<group>"; };
+		D8261DFB1CC9F3A6D924A751274406F5 /* Pods_RelativeConstraintManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RelativeConstraintManager_Tests.framework; path = "Pods-RelativeConstraintManager_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E952899E3776F51D423861FC7852603B /* Pods-RelativeConstraintManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RelativeConstraintManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EDC6A116094C78FDCFDBED679586AEE3 /* Pods-RelativeConstraintManager_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RelativeConstraintManager_Example-resources.sh"; sourceTree = "<group>"; };
 		F97694681063F06EE4337F2D535ED0E5 /* RelativeConstraintManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RelativeConstraintManager-prefix.pch"; sourceTree = "<group>"; };
@@ -125,6 +126,25 @@
 			path = "Example/Pods/Target Support Files/RelativeConstraintManager";
 			sourceTree = "<group>";
 		};
+		46A04D35F7010A17EF97C96BBEFA24AA /* RelativeConstraintManager */ = {
+			isa = PBXGroup;
+			children = (
+				7207998842D53B0851AF5F31D423E82C /* Classes */,
+			);
+			name = RelativeConstraintManager;
+			path = RelativeConstraintManager;
+			sourceTree = "<group>";
+		};
+		7207998842D53B0851AF5F31D423E82C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				87F6EB8292F3CC71BF1EBEF863826DBF /* RelativeConstraintManager.h */,
+				9ABF58025C28C07641D466C41303AEE6 /* RelativeConstraintManager.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		76EDD298D14329DF963DB6B7AD08A500 /* Pods-RelativeConstraintManager_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,18 +174,10 @@
 			);
 			sourceTree = "<group>";
 		};
-		8501FB57A87177318D7B92F95B405639 /* RelativeConstraintManager */ = {
-			isa = PBXGroup;
-			children = (
-				E3A4CCAF6ACA9B3E54A4925CC7C67F7F /* Classes */,
-			);
-			path = RelativeConstraintManager;
-			sourceTree = "<group>";
-		};
 		879209E7251BC3105CC4224DC05F11F3 /* RelativeConstraintManager */ = {
 			isa = PBXGroup;
 			children = (
-				8501FB57A87177318D7B92F95B405639 /* RelativeConstraintManager */,
+				46A04D35F7010A17EF97C96BBEFA24AA /* RelativeConstraintManager */,
 				35D6CD97DC5A237D1821C5C3FA242C78 /* Support Files */,
 			);
 			name = RelativeConstraintManager;
@@ -207,15 +219,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		E3A4CCAF6ACA9B3E54A4925CC7C67F7F /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				D93BC3F51F81792C0055D65F /* RelativeConstraintManager.h */,
-				D93BC3F61F81792C0055D65F /* RelativeConstraintManager.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		E5D2724E3A68F53F61691D1D8217744F /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,19 +238,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		250EA7746F92AC7AE33E1C58A8BDF12E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A5F4D3B8AC4ECB4EFD9258627F3D2299 /* RelativeConstraintManager-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5F8B9EFE486820BB7EC98B081545D5CD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C50BE0C940BA28FC84D436AF4471C8B5 /* Pods-RelativeConstraintManager_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E572987E5EC3B5607F2FBD4EA0318E2F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EAD3C1A5957B3BF43C84E62F4FEA274 /* RelativeConstraintManager-umbrella.h in Headers */,
+				0C8D283980C46E1A2E2503379D1A7DF7 /* RelativeConstraintManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,9 +280,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D9E0B781383BB76AE0724FB6AD023EC /* Build configuration list for PBXNativeTarget "RelativeConstraintManager" */;
 			buildPhases = (
-				42A4887B932BAC83CB7215425FE71E30 /* Sources */,
+				6A2D55918C078158AFF4412C4E4D324C /* Sources */,
 				B3FD21936BC1FABEE8DFDB7C5B048779 /* Frameworks */,
-				250EA7746F92AC7AE33E1C58A8BDF12E /* Headers */,
+				E572987E5EC3B5607F2FBD4EA0318E2F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -335,20 +339,20 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		42A4887B932BAC83CB7215425FE71E30 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D93BC3F71F81792C0055D65F /* RelativeConstraintManager.m in Sources */,
-				90984B16A71721F0B705A5334510C30A /* RelativeConstraintManager-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		604790BBBA6D831464D3A1D0E5428B74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5263579ACFCD626F5FFC5922C5ABF77A /* Pods-RelativeConstraintManager_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A2D55918C078158AFF4412C4E4D324C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9841AE31778E194F5C03BC6BAF6FC55 /* RelativeConstraintManager-dummy.m in Sources */,
+				FAA8E8942DC5F9C624BB2F5808D1A764 /* RelativeConstraintManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

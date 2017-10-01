@@ -1,5 +1,5 @@
 PODS:
-  - RelativeConstraintManager (0.1.0)
+  - RelativeConstraintManager (1.0)
 
 DEPENDENCIES:
   - RelativeConstraintManager (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  RelativeConstraintManager: 8f0dd945e13f74ad5488a48f3710a7f3566c91da
+  RelativeConstraintManager: 36dd630cedd8968d2a5fbc482296bdcfbd7d7496
 
 PODFILE CHECKSUM: 502f1b4c32c7d4a8c73a1f47297fc5c52269bd6d
 

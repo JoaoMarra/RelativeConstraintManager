@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "RelativeConstraintManager.h"
 
 FOUNDATION_EXPORT double RelativeConstraintManagerVersionNumber;
 FOUNDATION_EXPORT const unsigned char RelativeConstraintManagerVersionString[];

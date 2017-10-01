@@ -8,8 +8,9 @@
 
 #import "ViewController.h"
 #import "RelativeConstraintManager.h"
+#import "TableCell.h"
 
-@interface ViewController ()
+@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @end
 
@@ -17,54 +18,43 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor lightGrayColor];
     
-    UILabel *center = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    center.backgroundColor = [UIColor redColor];
-    center.textColor = [UIColor whiteColor];
-    center.text = @"CENTER\ncenter";
-    center.numberOfLines = 0;
-    [self.view addSubview:center];
-    [center centerVerticalInParent];
-    [center centerHorizontalInParent];
+    UITableView *tableView = [UITableView new];
+    tableView.backgroundColor = [UIColor clearColor];
+    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    tableView.delegate = self;
+    tableView.dataSource = self;
+    [tableView registerClass:[TableCell class] forCellReuseIdentifier:@"TableCell"];
+    [self.view addSubview:tableView];
     
-    UILabel *left = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    left.backgroundColor = [UIColor blackColor];
-    left.textColor = [UIColor whiteColor];
-    left.text = @"LEFT";
-    [self.view addSubview:left];
-    [left leftOf:center margin:10];
-    [left alignCenterVertical:center];
+    [tableView alignParentTopWithMargin:20];
+    [tableView alignParentLeftWithMargin:0];
+    [tableView alignParentRightWithMargin:0];
+    [tableView alignParentBottomWithMargin:0];
     
-    UIView *right = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    right.backgroundColor = [UIColor blueColor];
-    [self.view addSubview:right];
-    [right rightOf:center];
-    [right defineHeight:100 relation:NSLayoutRelationEqual];
-    [right defineWidth:100 relation:NSLayoutRelationEqual];
-    [right alignBottom:self.view];
-    
-    UIView *backBase = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 30, 100)];
-    backBase.backgroundColor = [UIColor lightGrayColor];
-    [self.view addSubview:backBase];
-    [backBase centerHorizontalInParent];
-    [backBase centerVerticalInParent];
-    
-    UIView *backCenter = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 30)];
-    backCenter.backgroundColor = [UIColor darkGrayColor];
-    [backCenter defineHeight:50 relation:NSLayoutRelationEqual];
-    [backCenter defineWidth:30 relation:NSLayoutRelationEqual];
-    [backBase addSubview:backCenter];
-    [backCenter alignLeft:backBase margin:10];
-    [backCenter alignRight:backBase margin:10];
-    [backCenter alignTop:backBase margin:10];
-    [backCenter alignBottom:backBase margin:10];
 }
 
+#pragma mark - UITableViewDataSource methods
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 100;
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    TableCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TableCell" forIndexPath:indexPath];
+    
+    cell.title.text = [NSString stringWithFormat:@"#%d TITLE",(int)indexPath.row];
+    int f = (int)indexPath.row+1;
+    NSMutableString *string = [NSMutableString new];
+    [string appendString:@"TIME"];
+    for(int i=0; i < f; i++)  {
+        [string appendString:[NSString stringWithFormat:@"\nLINE %d",i]];
+    }
+    [string appendString:@"\nFIM"];
+    cell.time.text = string;
+    
+    return cell;
+}
 
 @end

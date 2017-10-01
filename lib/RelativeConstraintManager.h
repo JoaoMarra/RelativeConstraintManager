@@ -11,10 +11,19 @@
 
 @interface UIView (RelativeConstraintManager)
 
--(void)clearConstraints;
-
 -(void)centerHorizontalInParent;
+-(void)centerHorizontalInParentWithMargin:(CGFloat)marginCenter;
 -(void)centerVerticalInParent;
+-(void)centerVerticalInParentWithMargin:(CGFloat)marginCenter;
+
+-(void)alignParentLeft;
+-(void)alignParentLeftWithMargin:(CGFloat)margin;
+-(void)alignParentRight;
+-(void)alignParentRightWithMargin:(CGFloat)margin;
+-(void)alignParentTop;
+-(void)alignParentTopWithMargin:(CGFloat)margin;
+-(void)alignParentBottom;
+-(void)alignParentBottomWithMargin:(CGFloat)margin;
 
 -(void)leftOf:(UIView *)left;
 -(void)leftOf:(UIView *)left margin:(CGFloat)marginLeft;
@@ -43,4 +52,6 @@
 
 -(void)defineHeight:(CGFloat)height relation:(NSLayoutRelation)relation;
 -(void)defineWidth:(CGFloat)width relation:(NSLayoutRelation)relation;
+
+-(BOOL)removeConstraintWithAttribute:(NSLayoutAttribute)attribute;
 @end

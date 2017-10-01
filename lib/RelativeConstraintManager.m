@@ -15,33 +15,48 @@
     
 }
 
-#pragma mark - place set methods
+#pragma mark - parent align methods
 
 -(void)centerHorizontalInParent {
-    [self setTranslatesAutoresizingMaskIntoConstraints:false];
-    if(self.superview) {
-        [self.superview addConstraint:[NSLayoutConstraint
-                             constraintWithItem:self
-                             attribute:NSLayoutAttributeCenterX
-                             relatedBy:NSLayoutRelationEqual
-                             toItem:self.superview
-                             attribute:NSLayoutAttributeCenterX
-                             multiplier:1
-                             constant:0]];
-    }
+    [self centerVerticalInParentWithMargin:0];
 }
+-(void)centerHorizontalInParentWithMargin:(CGFloat)marginCenter {
+    [self alignCenterHorizontal:self.superview margin:marginCenter];
+}
+
 -(void)centerVerticalInParent {
-    [self setTranslatesAutoresizingMaskIntoConstraints:false];
-    if(self.superview) {
-        [self.superview addConstraint:[NSLayoutConstraint
-                             constraintWithItem:self
-                             attribute:NSLayoutAttributeCenterY
-                             relatedBy:NSLayoutRelationEqual
-                             toItem:self.superview
-                             attribute:NSLayoutAttributeCenterY
-                             multiplier:1
-                             constant:0]];
-    }
+    [self centerVerticalInParentWithMargin:0];
+}
+-(void)centerVerticalInParentWithMargin:(CGFloat)marginCenter {
+    [self alignCenterVertical:self.superview margin:marginCenter];
+}
+
+-(void)alignParentLeft {
+    [self alignParentLeftWithMargin:0];
+}
+-(void)alignParentLeftWithMargin:(CGFloat)margin {
+    [self alignLeft:self.superview margin:margin];
+}
+
+-(void)alignParentRight {
+    [self alignParentRightWithMargin:0];
+}
+-(void)alignParentRightWithMargin:(CGFloat)margin {
+    [self alignRight:self.superview margin:margin];
+}
+
+-(void)alignParentTop {
+    [self alignParentTopWithMargin:0];
+}
+-(void)alignParentTopWithMargin:(CGFloat)margin {
+    [self alignTop:self.superview margin:margin];
+}
+
+-(void)alignParentBottom {
+    [self alignParentBottomWithMargin:0];
+}
+-(void)alignParentBottomWithMargin:(CGFloat)margin {
+    [self alignBottom:self.superview margin:margin];
 }
 
 #pragma mark - side reference methods
@@ -51,6 +66,7 @@
 }
 -(void)leftOf:(UIView *)left margin:(CGFloat)marginLeft {
     [self setTranslatesAutoresizingMaskIntoConstraints:false];
+    [self removeConstraintWithAttribute:NSLayoutAttributeRight];
     if(self.superview) {
         [self.superview addConstraint:[NSLayoutConstraint
                              constraintWithItem:self
@@ -69,6 +85,7 @@
 }
 -(void)rightOf:(UIView *)right margin:(CGFloat)marginRight {
     [self setTranslatesAutoresizingMaskIntoConstraints:false];
+    [self removeConstraintWithAttribute:NSLayoutAttributeLeft];
     if(self.superview) {
         [self.superview addConstraint:[NSLayoutConstraint
                                        constraintWithItem:self
@@ -86,6 +103,7 @@
 }
 -(void)below:(UIView *)below margin:(CGFloat)marginTop {
     [self setTranslatesAutoresizingMaskIntoConstraints:false];
+    [self removeConstraintWithAttribute:NSLayoutAttributeTop];
     if(self.superview) {
         [self.superview addConstraint:[NSLayoutConstraint
                                        constraintWithItem:self
@@ -104,6 +122,7 @@
 
 -(void)above:(UIView *)above margin:(CGFloat)marginBottom {
     [self setTranslatesAutoresizingMaskIntoConstraints:false];
+    [self removeConstraintWithAttribute:NSLayoutAttributeBottom];
     if(self.superview) {
         [self.superview addConstraint:[NSLayoutConstraint
                                        constraintWithItem:self
@@ -123,6 +142,7 @@
 }
 -(void)alignLeft:(UIView *)left margin:(CGFloat)marginLeft {
     [self setTranslatesAutoresizingMaskIntoConstraints:false];
+    [self removeConstraintWithAttribute:NSLayoutAttributeLeft];
     if(self.superview) {
         [self.superview addConstraint:[NSLayoutConstraint
                                        constraintWithItem:self
@@ -140,6 +160,7 @@
 }
 -(void)alignRight:(UIView *)right margin:(CGFloat)marginRight {
     [self setTranslatesAutoresizingMaskIntoConstraints:false];
+    [self removeConstraintWithAttribute:NSLayoutAttributeRight];
     if(self.superview) {
         [self.superview addConstraint:[NSLayoutConstraint
                                        constraintWithItem:self
@@ -157,6 +178,7 @@
 }
 -(void)alignTop:(UIView *)top margin:(CGFloat)marginTop {
     [self setTranslatesAutoresizingMaskIntoConstraints:false];
+    [self removeConstraintWithAttribute:NSLayoutAttributeTop];
     if(self.superview) {
         [self.superview addConstraint:[NSLayoutConstraint
                                        constraintWithItem:self
@@ -174,6 +196,7 @@
 }
 -(void)alignBottom:(UIView *)bottom margin:(CGFloat)marginBottom {
     [self setTranslatesAutoresizingMaskIntoConstraints:false];
+    [self removeConstraintWithAttribute:NSLayoutAttributeBottom];
     if(self.superview) {
         [self.superview addConstraint:[NSLayoutConstraint
                                        constraintWithItem:self
@@ -192,6 +215,7 @@
 }
 -(void)alignCenterHorizontal:(UIView *)centerHorizontal margin:(CGFloat)marginCenter {
     [self setTranslatesAutoresizingMaskIntoConstraints:false];
+    [self removeConstraintWithAttribute:NSLayoutAttributeCenterX];
     if(self.superview) {
         [self.superview addConstraint:[NSLayoutConstraint
                                        constraintWithItem:self
@@ -208,6 +232,7 @@
 }
 -(void)alignCenterVertical:(UIView *)centerVertical margin:(CGFloat)marginCenter {
     [self setTranslatesAutoresizingMaskIntoConstraints:false];
+    [self removeConstraintWithAttribute:NSLayoutAttributeCenterY];
     if(self.superview) {
         [self.superview addConstraint:[NSLayoutConstraint
                                        constraintWithItem:self
@@ -224,6 +249,7 @@
 
 -(void)defineHeight:(CGFloat)height relation:(NSLayoutRelation)relation {
     [self setTranslatesAutoresizingMaskIntoConstraints:false];
+    [self removeConstraintWithAttribute:NSLayoutAttributeHeight];
     [self addConstraint:[NSLayoutConstraint
                          constraintWithItem:self
                          attribute:NSLayoutAttributeHeight
@@ -235,6 +261,7 @@
 }
 -(void)defineWidth:(CGFloat)width relation:(NSLayoutRelation)relation {
     [self setTranslatesAutoresizingMaskIntoConstraints:false];
+    [self removeConstraintWithAttribute:NSLayoutAttributeWidth];
     [self addConstraint:[NSLayoutConstraint
                          constraintWithItem:self
                          attribute:NSLayoutAttributeWidth
@@ -245,7 +272,20 @@
                          constant:width]];
 }
 
-#pragma mark - overrited needs
+#pragma mark - help needs
 
+-(BOOL)removeConstraintWithAttribute:(NSLayoutAttribute)attribute {
+    BOOL result = NO;
+    NSLayoutConstraint *constraint;
+    for(int i=0; i < self.constraints.count; i++) {
+        constraint = self.constraints[i];
+        if(constraint.firstAttribute == attribute) {
+            [self removeConstraint:constraint];
+            i = (int)self.constraints.count;
+            result = YES;
+        }
+    }
+    return result;
+}
 
 @end

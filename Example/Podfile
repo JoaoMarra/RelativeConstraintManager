@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RelativeConstraintManager_Example' do
+  pod 'RelativeConstraintManager', :path => '../'
+
+  target 'RelativeConstraintManager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

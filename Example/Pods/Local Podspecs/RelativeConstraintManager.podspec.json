@@ -1,0 +1,22 @@
+{
+  "name": "RelativeConstraintManager",
+  "version": "0.1.0",
+  "summary": "A short description of RelativeConstraintManager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/JoaoMarra/RelativeConstraintManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "JoaoMarra": "silvamarraster@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/JoaoMarra/RelativeConstraintManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "RelativeConstraintManager/Classes/**/*"
+}

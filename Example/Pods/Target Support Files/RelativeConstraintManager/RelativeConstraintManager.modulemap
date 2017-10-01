@@ -1,0 +1,6 @@
+framework module RelativeConstraintManager {
+  umbrella header "RelativeConstraintManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

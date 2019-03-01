@@ -18,7 +18,7 @@
 #pragma mark - parent align methods
 
 -(void)centerHorizontalInParent {
-    [self centerVerticalInParentWithMargin:0];
+    [self centerHorizontalInParentWithMargin:0];
 }
 -(void)centerHorizontalInParentWithMargin:(CGFloat)marginCenter {
     [self alignCenterHorizontal:self.superview margin:marginCenter];

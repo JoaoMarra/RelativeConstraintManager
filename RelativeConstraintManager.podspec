@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RelativeConstraintManager'
-  s.version          = '1.0'
+  s.version          = '1.1'
   s.summary          = 'Easy way to use relational constraints programatically'
 
 # This description is used to generate tags and improve search results.

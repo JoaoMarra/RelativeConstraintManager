@@ -293,14 +293,14 @@
     for(int i=0; i < self.constraints.count; i++) {
         constraint = self.constraints[i];
         if(constraint.firstAttribute == attribute && constraint.firstItem == self) {
-            return constraint[i];
+            return constraint;
         }
     }
     if(self.superview) {
         for(int i=0; i < self.superview.constraints.count; i++) {
             constraint = self.superview.constraints[i];
             if(constraint.firstAttribute == attribute && constraint.firstItem == self) {
-                return constraint[i];
+                return constraint;
             }
         }
     }

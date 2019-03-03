@@ -279,13 +279,32 @@
     NSLayoutConstraint *constraint;
     for(int i=0; i < self.constraints.count; i++) {
         constraint = self.constraints[i];
-        if(constraint.firstAttribute == attribute) {
+        if(constraint.firstAttribute == attribute && constraint.firstItem == self) {
             [self removeConstraint:constraint];
             i = (int)self.constraints.count;
             result = YES;
         }
     }
     return result;
+}
+
+-(NSLayoutConstraint *)constraintForAttribute:(NSLayoutAttribute)attribute {
+    NSLayoutConstraint *constraint;
+    for(int i=0; i < self.constraints.count; i++) {
+        constraint = self.constraints[i];
+        if(constraint.firstAttribute == attribute && constraint.firstItem == self) {
+            return constraint[i];
+        }
+    }
+    if(self.superview) {
+        for(int i=0; i < self.superview.constraints.count; i++) {
+            constraint = self.superview.constraints[i];
+            if(constraint.firstAttribute == attribute && constraint.firstItem == self) {
+                return constraint[i];
+            }
+        }
+    }
+    return nil;
 }
 
 @end

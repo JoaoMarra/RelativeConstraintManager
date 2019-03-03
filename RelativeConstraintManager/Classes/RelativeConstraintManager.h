@@ -54,4 +54,6 @@
 -(void)defineWidth:(CGFloat)width relation:(NSLayoutRelation)relation;
 
 -(BOOL)removeConstraintWithAttribute:(NSLayoutAttribute)attribute;
+
+-(NSLayoutConstraint *)constraintForAttribute:(NSLayoutAttribute)attribute;
 @end
